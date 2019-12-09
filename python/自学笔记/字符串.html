@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>字符串格式化与while循环 | Simon的书柜</title>
+    <meta name="description" content="Simon的书柜">
+    <link rel="icon" href="/Simon-Bookcase/img/geass-bg.ico">
+    
+    <link rel="preload" href="/Simon-Bookcase/assets/css/0.styles.6202bd9e.css" as="style"><link rel="preload" href="/Simon-Bookcase/assets/js/app.9b71d7d3.js" as="script"><link rel="preload" href="/Simon-Bookcase/assets/js/3.610de219.js" as="script"><link rel="preload" href="/Simon-Bookcase/assets/js/1.39b71273.js" as="script"><link rel="preload" href="/Simon-Bookcase/assets/js/93.272d962e.js" as="script"><link rel="prefetch" href="/Simon-Bookcase/assets/js/10.17ae9bde.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/100.48df320e.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/101.06bfcf6a.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/102.b73c6b21.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/103.5aaef1bf.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/104.2692bf1f.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/105.f3dcc348.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/106.3a6a60f9.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/107.912f6b85.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/108.f53c82d0.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/11.d723bd0d.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/12.ddde2d75.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/13.09a029b4.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/14.74a7a238.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/15.153fa93a.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/16.bb4629ac.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/17.15c4ba17.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/18.d6f74bef.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/19.a7729dfa.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/20.bfc009bd.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/21.55698fa2.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/22.d5d41738.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/23.87f031c4.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/24.8088b9bc.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/25.c1eb0d19.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/26.968580a9.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/27.aa43355a.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/28.a6f76076.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/29.bf66b2d0.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/30.977ef018.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/31.e41b860e.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/32.15fa117c.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/33.51f44882.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/34.4e49a4dc.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/35.26626783.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/36.734e4db8.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/37.2c7e8d5a.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/38.fdf58eac.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/39.3d9281c6.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/4.960bff97.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/40.ec625640.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/41.9fee99a3.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/42.9a37c66b.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/43.27d4487d.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/44.30350b5e.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/45.d047fea5.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/46.df8c99c5.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/47.c9edcf0c.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/48.6912b276.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/49.b4c4b376.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/5.358b695b.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/50.b38a023a.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/51.7e9b2c08.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/52.ddf769e4.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/53.08081855.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/54.d987bb7a.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/55.e423de04.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/56.885f7774.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/57.44b0baf8.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/58.c1971d95.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/59.d2e48458.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/6.c8643497.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/60.c5019192.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/61.2fa929ba.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/62.1a329d37.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/63.e1bea758.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/64.817d5607.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/65.0e741d26.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/66.ee04b710.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/67.c136746d.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/68.9fd91399.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/69.95a17c97.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/7.fff1e112.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/70.d6ce2aba.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/71.ce23de77.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/72.d8aca67b.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/73.adefc858.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/74.7853fca1.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/75.7c0995b5.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/76.5b14016c.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/77.93be27fc.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/78.bf3717fa.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/79.e6ed9b32.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/8.61310dc3.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/80.aeeebec9.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/81.8df2f6ad.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/82.c98d0db0.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/83.7f916c23.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/84.38ca5b4b.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/85.62740abc.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/86.4fc19204.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/87.4f510b9d.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/88.b4b2c3cc.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/89.374c2a21.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/9.958feae9.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/90.0d59e2ad.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/91.f43546bb.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/92.22545df9.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/94.ced7cdf1.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/95.0ed62933.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/96.0232a198.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/97.da01ca81.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/98.e5825ed5.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/99.eb969587.js">
+    <link rel="stylesheet" href="/Simon-Bookcase/assets/css/0.styles.6202bd9e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-ad130a7c><div data-v-ad130a7c><LoadingPage class="loading-wrapper" data-v-ad130a7c data-v-ad130a7c></LoadingPage> <div class="password-shadow password-wrapper-out is-home" style="display:none;" data-v-262b1d1e data-v-ad130a7c data-v-ad130a7c><h3 class="title" data-v-262b1d1e>Simon的书柜</h3> <p class="description" data-v-262b1d1e>Simon的书柜</p> <label id="box" class="inputBox" data-v-262b1d1e><input type="password" value="" data-v-262b1d1e> <span data-v-262b1d1e>Konck! Knock!</span> <button data-v-262b1d1e>OK</button></label> <div class="footer" data-v-262b1d1e><span data-v-262b1d1e><i class="iconfont reco-theme" data-v-262b1d1e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-262b1d1e>vuePress-theme-reco</a></span> <span data-v-262b1d1e><i class="iconfont reco-other" data-v-262b1d1e></i> <a data-v-262b1d1e>Simon的书柜</a></span> <span data-v-262b1d1e><i class="iconfont reco-copyright" data-v-262b1d1e></i> <a data-v-262b1d1e>2019</a></span></div></div> <div class="hide" data-v-ad130a7c><header class="navbar" data-v-ad130a7c><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Simon-Bookcase/" class="home-link router-link-active"><!----> <span class="site-name">Simon的书柜</span></a> <div class="links"><!----> <Screenfull class="screenfull"></Screenfull> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Simon-Bookcase/computer/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  计算机基础
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/java/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  Java
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/Python/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  Python
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/middleware/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  中间件
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/database/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  数据库
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/python/%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术博客
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/python/%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/.html" class="nav-link"><i class="iconfont undefined"></i>
+  随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      GitHub
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Mulander-J" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  GitHub首页
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-ad130a7c></div> <aside class="sidebar" data-v-ad130a7c><nav class="nav-links"><div class="nav-item"><a href="/Simon-Bookcase/computer/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  计算机基础
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/java/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  Java
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/Python/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  Python
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/middleware/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  中间件
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/database/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  数据库
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/python/%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术博客
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/python/%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/.html" class="nav-link"><i class="iconfont undefined"></i>
+  随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      GitHub
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Mulander-J" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  GitHub首页
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/Simon-Bookcase/python/首页.html" class="sidebar-link">首页</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>自学笔记</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Simon-Bookcase/python/自学笔记/了解Python.html" class="sidebar-link">了解Python</a></li><li><a href="/Simon-Bookcase/python/自学笔记/基本运算符.html" class="sidebar-link">基本运算符</a></li><li><a href="/Simon-Bookcase/python/自学笔记/字符串.html" class="active sidebar-link">字符串</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Simon-Bookcase/python/自学笔记/字符串格式化与while循环.html" class="sidebar-link">字符串格式化与while循环</a></li><li><a href="/Simon-Bookcase/python/自学笔记/for循环与list.html" class="sidebar-link">for循环与list</a></li><li><a href="/Simon-Bookcase/python/自学笔记/list高级.html" class="sidebar-link">list高级</a></li><li><a href="/Simon-Bookcase/python/自学笔记/元组和字典.html" class="sidebar-link">元组和字典</a></li><li><a href="/Simon-Bookcase/python/自学笔记/Set和函数.html" class="sidebar-link">Set和函数</a></li><li><a href="/Simon-Bookcase/python/自学笔记/传参和变量.html" class="sidebar-link">传参和变量</a></li><li><a href="/Simon-Bookcase/python/自学笔记/装饰器和模块.html" class="sidebar-link">装饰器和模块</a></li><li><a href="/Simon-Bookcase/python/自学笔记/模块和包.html" class="sidebar-link">模块和包</a></li><li><a href="/Simon-Bookcase/python/自学笔记/异常.html" class="sidebar-link">异常</a></li><li><a href="/Simon-Bookcase/python/自学笔记/迭代器-生成器和字节.html" class="sidebar-link">迭代器、生成器和字节</a></li><li><a href="/Simon-Bookcase/python/自学笔记/File.html" class="sidebar-link">File</a></li><li><a href="/Simon-Bookcase/python/自学笔记/面向对象.html" class="sidebar-link">面向对象</a></li><li><a href="/Simon-Bookcase/python/自学笔记/类.html" class="sidebar-link">类</a></li><li><a href="/Simon-Bookcase/python/自学笔记/类的特征.html" class="sidebar-link">类的特征</a></li><li><a href="/Simon-Bookcase/python/自学笔记/与类相关.html" class="sidebar-link">与类相关</a></li><li><a href="/Simon-Bookcase/python/自学笔记/了解网络基础.html" class="sidebar-link">了解网络基础</a></li><li><a href="/Simon-Bookcase/python/自学笔记/UDP协议.html" class="sidebar-link">UDP协议</a></li><li><a href="/Simon-Bookcase/python/自学笔记/IO.html" class="sidebar-link">IO</a></li><li><a href="/Simon-Bookcase/python/自学笔记/IO多路复用.html" class="sidebar-link">IO多路复用</a></li><li><a href="/Simon-Bookcase/python/自学笔记/进程.html" class="sidebar-link">进程</a></li><li><a href="/Simon-Bookcase/python/自学笔记/线程.html" class="sidebar-link">线程</a></li><li><a href="/Simon-Bookcase/python/自学笔记/网络通信模型和协程.html" class="sidebar-link">网络通信模型和协程</a></li><li><a href="/Simon-Bookcase/python/自学笔记/初识Flask.html" class="sidebar-link">初识Flask</a></li><li><a href="/Simon-Bookcase/python/自学笔记/模板.html" class="sidebar-link">模板</a></li><li><a href="/Simon-Bookcase/python/自学笔记/Flask中的请求与响应.html" class="sidebar-link">Flask中的请求与响应</a></li><li><a href="/Simon-Bookcase/python/自学笔记/模型.html" class="sidebar-link">模型</a></li><li><a href="/Simon-Bookcase/python/自学笔记/基于Flask的CRUD.html" class="sidebar-link">基于Flask的CRUD</a></li><li><a href="/Simon-Bookcase/python/自学笔记/关系映射.html" class="sidebar-link">关系映射</a></li><li><a href="/Simon-Bookcase/python/自学笔记/Python爬虫.html" class="sidebar-link">Python爬虫</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-262b1d1e data-v-ad130a7c><h3 class="title" data-v-262b1d1e>字符串格式化与while循环</h3> <!----> <label id="box" class="inputBox" data-v-262b1d1e><input type="password" value="" data-v-262b1d1e> <span data-v-262b1d1e>Konck! Knock!</span> <button data-v-262b1d1e>OK</button></label> <div class="footer" data-v-262b1d1e><span data-v-262b1d1e><i class="iconfont reco-theme" data-v-262b1d1e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-262b1d1e>vuePress-theme-reco</a></span> <span data-v-262b1d1e><i class="iconfont reco-other" data-v-262b1d1e></i> <a data-v-262b1d1e>Simon的书柜</a></span> <span data-v-262b1d1e><i class="iconfont reco-copyright" data-v-262b1d1e></i> <a data-v-262b1d1e>2019</a></span></div></div> <div data-v-ad130a7c><main class="page reco-hide"> <div class="page-title"><h1>字符串格式化与while循环</h1> <hr> <div data-v-7b49930f><i class="iconfont reco-account" data-v-7b49930f><span data-v-7b49930f>Simon的书柜</span></i> <!----> <!----> <i class="iconfont reco-tag tags" data-v-7b49930f><span class="tag-item" data-v-7b49930f>
+      Python
+    </span><span class="tag-item" data-v-7b49930f>
+      Format
+    </span><span class="tag-item" data-v-7b49930f>
+      while
+    </span></i></div></div> <div class="theme-reco-content content__default"><h3 id="字符串-str"><a href="#字符串-str" class="header-anchor">#</a> 字符串 str</h3> <p>作用：用来记录文本（文字）信息</p> <p>字符串的表示方式：<br>
+    在非注释中，凡是用括号括起来的部分都是字符串<br>
+    ' 单引号 ------- 'hello world'<br>
+    &quot; 双引号 ------ &quot;hello world&quot;<br>
+    ''' 三单引号 ------- '''hello world'''<br>
+    &quot;&quot;&quot; 三双引号 --------- &quot;&quot;&quot;hello world&quot;&quot;&quot;</p> <p>双引号和单引号的区别：<br>
+    单引号内的双引号不算结束符，同理，双引号内的单引号也不算结束符
+三引号的作用：<br>
+    三引号字符串中的换行符会自动转换为换行符，同时，三引号内也可以包含单引号和双引号</p> <p>反斜杠转义字符表：<br>
+    '    单引号（'）<br>
+    ''   双引号（&quot;）<br>
+    \    一个反斜杠（\）<br>
+    \n    换行<br>
+    \r    返回光标至行首<br>
+    \t    水平制表符<br>
+    \v    垂直制表符<br>
+    \f    换页<br>
+    \b    倒退<br>
+    \0    空字符，字符值为0</p> <p><strong>序列：字符串即是序列</strong><br>
+求序列长度的函数：len(x)<br>
+    作用：返回字符串的长度<br>
+返回原始字符串：r&quot;字符串内容&quot;<br>
+    作用：让转义字符\无效</p> <p><strong>字符串的运算</strong><br>
++     加号运算符用于拼接字符串<br>
+*     用于生成重复的字符串<br>
+示例：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>s <span class="token operator">=</span> <span class="token string">&quot;123&quot;</span> <span class="token operator">+</span> <span class="token string">&quot;456&quot;</span>   <span class="token comment">#   s = &quot;123456&quot;</span>
+s <span class="token operator">=</span> <span class="token string">&quot;123&quot;</span> <span class="token operator">*</span> <span class="token number">3</span>   <span class="token comment"># s = &quot;123123123&quot;</span>
+注：字符串只能与整数相乘
+<span class="token operator">+=</span>，<span class="token operator">*=</span>运算符，与其它复合赋值运算符规则相同
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>字符串的比较运算</strong><br>
+运算符：<br>
+    &gt;   &gt;=   &lt;   &lt;=   ==    !=<br>
+规则：<br>
+    依次按编码值进行比较，直到最短的字符串结束为止<br>
+示例：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token string">'A'</span>  <span class="token operator">&lt;</span>  <span class="token string">'B'</span>    <span class="token comment"># True</span>
+<span class="token string">'ABC'</span>  <span class="token operator">&gt;</span>  <span class="token string">'ABB'</span>    <span class="token comment">#  True</span>
+<span class="token string">'ABC'</span>  <span class="token operator">&gt;</span>  <span class="token string">'ACB'</span>    <span class="token comment">#  False</span>
+<span class="token string">'AB'</span>  <span class="token operator">&lt;</span>  <span class="token string">'ABC'</span>    <span class="token comment">#  True</span>
+<span class="token string">'ABC'</span>  <span class="token operator">&gt;</span>  <span class="token string">'123'</span>    <span class="token comment">#  True</span>
+<span class="token string">'ABC'</span>  <span class="token operator">==</span>  <span class="token string">'abc'</span>    <span class="token comment">#  False</span>
+<span class="token string">'ABCD'</span>  <span class="token operator">!=</span>  <span class="token string">'DCBA'</span>    <span class="token comment">#  True</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>字符串的索引操作<br>
+    Python的字符串是不可改变的字符序列</p> <h3 id="索引-index"><a href="#索引-index" class="header-anchor">#</a> 索引 index</h3> <p>语法：
+    字符串[整数表达式]
+说明：
+    Python序列都可以用索引来访问序列中的对象<br>
+    Python序列的正向索引是从0开始的，第二个索引为1，最后一个索引为len(s)-1<br>
+    Python序列的反向索引是从-1开始的，-1代表最后一个，-2代表倒数第二个，以此类推，最后一个是-len(s)<br>
+示例：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>S <span class="token operator">=</span> <span class="token string">&quot;ABCDE&quot;</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>S<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>    <span class="token comment">#  A</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>S<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>    <span class="token comment">#  D</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>S<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>    <span class="token comment">#  E</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>S<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>    <span class="token comment">#  C</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="切片-slice"><a href="#切片-slice" class="header-anchor">#</a> 切片 slice</h3> <p>作用：从一个字符串序列中取出相应的元素重新组成一个字符串序列<br>
+语法：字符串序列[(开始索引b) : (结束索引e)(:(步长s))]</p> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>注：小括号()括起的部分可以省略</p></div> <p>说明：</p> <ol><li>开始索引是切片开始切下的位置，0代表第一个元素，1代表第二个元素，-1代表最后一个</li> <li>结束索引是切片的终止索引（但不包含终止点）</li> <li>步长是切片每次获取完当前元素后移动的方向和偏移量
+<ol><li>没有步长，相当于取值完成后向右移动一个索引的位置（默认为1）</li> <li>当步长为正时，取正向切片，步长默认为1，开始索引默认为0，结束索引默认为len(s)，步长代表下一次索引取值的增长值</li> <li>当步长为负整数时，取反向切片，默认起始位置是最后一个元素，终止位置是第一个元素的前一个位置
+<ul><li>反转字符串的方法：reverse = S[::-1]</li></ul></li></ol></li></ol> <p>Python3中常用于序列的函数：<br>
+    len(x) 返回序列的长度<br>
+    max(x) 返回序列的最大值元素<br>
+    min(x) 返回序列的最小值元素</p> <p>字符串编码转换函数：<br>
+    ord(c) 返回一个自读Unicode值<br>
+    chr(i) 返回i这个整数值所对应的字符</p> <p>整数转字符串函数<br>
+    bin(i) 将整数转为二进制字符串<br>
+    oct(i) 将整数转为八进制字符串<br>
+    hex(i) 将整数转为十六进制字符串</p> <p>字符串的构造函数<br>
+    str(obj = &quot;&quot;)  将对象转为字符串
+示意：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token string">&quot;123&quot;</span> <span class="token operator">+</span> <span class="token number">456</span>    <span class="token comment"># 出错，不合法</span>
+<span class="token builtin">str</span><span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>     <span class="token comment"># 'True'</span>
+<span class="token builtin">str</span><span class="token punctuation">(</span><span class="token boolean">None</span><span class="token punctuation">)</span>    <span class="token comment"># 'None'</span>
+<span class="token builtin">str</span><span class="token punctuation">(</span><span class="token number">3.14</span><span class="token punctuation">)</span>    <span class="token comment"># '3.14'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>Python3字符串常用方法：<br>
+    in方法：判断内容是否在字符串中<br>
+    is方法：判断字符串内存地址是否相同<br>
+    endswith()方法：判断字符串是否以指定内容结尾<br>
+    startswith()方法：判断字符串是否以指定内容开始<br>
+    isalnum()方法：判断字符串是否包含数字和字母<br>
+    isalpha()方法：判断输入的字符串是否是英文字母<br>
+    isdigit()：判断输入的字符串是否是数字<br>
+    lstrip()：默认去掉字符串左边的空格和换行<br>
+    rstrip()：默认去掉字符串右边的空格和换行<br>
+    strip()：默认去掉字符串两边的空格和换行<br>
+    strip(&quot;&quot;)：去掉指定的字符串<br>
+    replace(&quot;&quot;, &quot;&quot;)：将前一个字符串替换为后一个字符串<br>
+    replace(&quot;&quot;, &quot;&quot;, num)：将前一个字符串替换为后一个字符串，并指定替换次数<br>
+    find(&quot;&quot;)：查找字符串的索引<br>
+    find(&quot;&quot;, num, num)：可指定查找字符串的范围<br>
+    rfind(&quot;&quot;)：从后往前查找字符串<br>
+    index(&quot;&quot;)：按索引值查找字符串内容<br>
+    split()：分割字符串<br>
+    splitlines()：按换行符分割字符串<br>
+    count(&quot;&quot;)：字符产出现的次数</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">12/8/2019, 5:06:20 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Simon-Bookcase/python/自学笔记/基本运算符.html" class="prev">
+          基本运算符
+        </a></span> <span class="next"><a href="/Simon-Bookcase/python/自学笔记/字符串格式化与while循环.html">
+          字符串格式化与while循环
+        </a>
+        →
+      </span></p></div> </main> <!----> <Comments isShowComments="true" data-v-ad130a7c></Comments></div></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/Simon-Bookcase/assets/js/app.9b71d7d3.js" defer></script><script src="/Simon-Bookcase/assets/js/3.610de219.js" defer></script><script src="/Simon-Bookcase/assets/js/1.39b71273.js" defer></script><script src="/Simon-Bookcase/assets/js/93.272d962e.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TCP/IP基础知识 | Simon的书柜</title>
+    <meta name="description" content="Simon的书柜">
+    <link rel="icon" href="/Simon-Bookcase/img/geass-bg.ico">
+    
+    <link rel="preload" href="/Simon-Bookcase/assets/css/0.styles.6202bd9e.css" as="style"><link rel="preload" href="/Simon-Bookcase/assets/js/app.9b71d7d3.js" as="script"><link rel="preload" href="/Simon-Bookcase/assets/js/3.610de219.js" as="script"><link rel="preload" href="/Simon-Bookcase/assets/js/1.39b71273.js" as="script"><link rel="preload" href="/Simon-Bookcase/assets/js/23.87f031c4.js" as="script"><link rel="prefetch" href="/Simon-Bookcase/assets/js/10.17ae9bde.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/100.48df320e.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/101.06bfcf6a.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/102.b73c6b21.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/103.5aaef1bf.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/104.2692bf1f.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/105.f3dcc348.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/106.3a6a60f9.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/107.912f6b85.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/108.f53c82d0.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/11.d723bd0d.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/12.ddde2d75.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/13.09a029b4.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/14.74a7a238.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/15.153fa93a.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/16.bb4629ac.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/17.15c4ba17.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/18.d6f74bef.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/19.a7729dfa.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/20.bfc009bd.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/21.55698fa2.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/22.d5d41738.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/24.8088b9bc.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/25.c1eb0d19.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/26.968580a9.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/27.aa43355a.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/28.a6f76076.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/29.bf66b2d0.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/30.977ef018.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/31.e41b860e.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/32.15fa117c.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/33.51f44882.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/34.4e49a4dc.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/35.26626783.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/36.734e4db8.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/37.2c7e8d5a.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/38.fdf58eac.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/39.3d9281c6.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/4.960bff97.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/40.ec625640.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/41.9fee99a3.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/42.9a37c66b.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/43.27d4487d.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/44.30350b5e.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/45.d047fea5.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/46.df8c99c5.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/47.c9edcf0c.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/48.6912b276.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/49.b4c4b376.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/5.358b695b.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/50.b38a023a.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/51.7e9b2c08.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/52.ddf769e4.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/53.08081855.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/54.d987bb7a.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/55.e423de04.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/56.885f7774.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/57.44b0baf8.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/58.c1971d95.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/59.d2e48458.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/6.c8643497.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/60.c5019192.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/61.2fa929ba.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/62.1a329d37.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/63.e1bea758.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/64.817d5607.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/65.0e741d26.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/66.ee04b710.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/67.c136746d.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/68.9fd91399.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/69.95a17c97.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/7.fff1e112.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/70.d6ce2aba.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/71.ce23de77.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/72.d8aca67b.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/73.adefc858.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/74.7853fca1.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/75.7c0995b5.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/76.5b14016c.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/77.93be27fc.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/78.bf3717fa.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/79.e6ed9b32.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/8.61310dc3.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/80.aeeebec9.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/81.8df2f6ad.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/82.c98d0db0.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/83.7f916c23.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/84.38ca5b4b.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/85.62740abc.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/86.4fc19204.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/87.4f510b9d.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/88.b4b2c3cc.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/89.374c2a21.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/9.958feae9.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/90.0d59e2ad.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/91.f43546bb.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/92.22545df9.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/93.272d962e.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/94.ced7cdf1.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/95.0ed62933.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/96.0232a198.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/97.da01ca81.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/98.e5825ed5.js"><link rel="prefetch" href="/Simon-Bookcase/assets/js/99.eb969587.js">
+    <link rel="stylesheet" href="/Simon-Bookcase/assets/css/0.styles.6202bd9e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-ad130a7c><div data-v-ad130a7c><LoadingPage class="loading-wrapper" data-v-ad130a7c data-v-ad130a7c></LoadingPage> <div class="password-shadow password-wrapper-out is-home" style="display:none;" data-v-262b1d1e data-v-ad130a7c data-v-ad130a7c><h3 class="title" data-v-262b1d1e>Simon的书柜</h3> <p class="description" data-v-262b1d1e>Simon的书柜</p> <label id="box" class="inputBox" data-v-262b1d1e><input type="password" value="" data-v-262b1d1e> <span data-v-262b1d1e>Konck! Knock!</span> <button data-v-262b1d1e>OK</button></label> <div class="footer" data-v-262b1d1e><span data-v-262b1d1e><i class="iconfont reco-theme" data-v-262b1d1e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-262b1d1e>vuePress-theme-reco</a></span> <span data-v-262b1d1e><i class="iconfont reco-other" data-v-262b1d1e></i> <a data-v-262b1d1e>Simon的书柜</a></span> <span data-v-262b1d1e><i class="iconfont reco-copyright" data-v-262b1d1e></i> <a data-v-262b1d1e>2019</a></span></div></div> <div class="hide" data-v-ad130a7c><header class="navbar" data-v-ad130a7c><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Simon-Bookcase/" class="home-link router-link-active"><!----> <span class="site-name">Simon的书柜</span></a> <div class="links"><!----> <Screenfull class="screenfull"></Screenfull> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Simon-Bookcase/computer/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  计算机基础
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/java/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  Java
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/Python/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  Python
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/middleware/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  中间件
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/database/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  数据库
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/computer/%E3%80%8A%E5%9B%BE%E8%A7%A3TCPIP%E3%80%8B%E7%AC%94%E8%AE%B0/.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术博客
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/computer/%E3%80%8A%E5%9B%BE%E8%A7%A3TCPIP%E3%80%8B%E7%AC%94%E8%AE%B0/.html" class="nav-link"><i class="iconfont undefined"></i>
+  随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      GitHub
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Mulander-J" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  GitHub首页
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-ad130a7c></div> <aside class="sidebar" data-v-ad130a7c><nav class="nav-links"><div class="nav-item"><a href="/Simon-Bookcase/computer/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  计算机基础
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/java/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  Java
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/Python/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  Python
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/middleware/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  中间件
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/database/首页.html" class="nav-link"><i class="iconfont undefined"></i>
+  数据库
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/computer/%E3%80%8A%E5%9B%BE%E8%A7%A3TCPIP%E3%80%8B%E7%AC%94%E8%AE%B0/.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术博客
+</a></div><div class="nav-item"><a href="/Simon-Bookcase/computer/%E3%80%8A%E5%9B%BE%E8%A7%A3TCPIP%E3%80%8B%E7%AC%94%E8%AE%B0/.html" class="nav-link"><i class="iconfont undefined"></i>
+  随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      GitHub
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Mulander-J" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  GitHub首页
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/Simon-Bookcase/computer/首页.html" class="sidebar-link">首页</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Linux基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTTP简介</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>图解TCPIP--阅读笔记</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/网络基础知识.html" class="sidebar-link">网络基础知识</a></li><li><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/TCPIP基础知识.html" class="active sidebar-link">TCPIP基础知识</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/TCPIP基础知识.html#tcp-ip的标准化" class="sidebar-link">TCP/IP的标准化</a></li><li class="sidebar-sub-header"><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/TCPIP基础知识.html#互联网基础知识" class="sidebar-link">互联网基础知识</a></li><li class="sidebar-sub-header"><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/TCPIP基础知识.html#tcp-ip协议分层模型" class="sidebar-link">TCP/IP协议分层模型</a></li><li class="sidebar-sub-header"><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/TCPIP基础知识.html#tcp-ip分层模型和通信示例" class="sidebar-link">TCP/IP分层模型和通信示例</a></li></ul></li><li><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/数据链路.html" class="sidebar-link">数据链路</a></li><li><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/IP协议.html" class="sidebar-link">IP协议</a></li><li><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/IP协议相关技术.html" class="sidebar-link">IP协议相关技术</a></li><li><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/TCP和UDP.html" class="sidebar-link">TCP和UDP</a></li><li><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/路由协议.html" class="sidebar-link">路由协议</a></li><li><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/应用协议.html" class="sidebar-link">应用协议</a></li><li><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/网络安全.html" class="sidebar-link">网络安全</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>图解HTTP--阅读笔记</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-262b1d1e data-v-ad130a7c><h3 class="title" data-v-262b1d1e>TCP/IP基础知识</h3> <!----> <label id="box" class="inputBox" data-v-262b1d1e><input type="password" value="" data-v-262b1d1e> <span data-v-262b1d1e>Konck! Knock!</span> <button data-v-262b1d1e>OK</button></label> <div class="footer" data-v-262b1d1e><span data-v-262b1d1e><i class="iconfont reco-theme" data-v-262b1d1e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-262b1d1e>vuePress-theme-reco</a></span> <span data-v-262b1d1e><i class="iconfont reco-other" data-v-262b1d1e></i> <a data-v-262b1d1e>Simon的书柜</a></span> <span data-v-262b1d1e><i class="iconfont reco-copyright" data-v-262b1d1e></i> <a data-v-262b1d1e>2019</a></span></div></div> <div data-v-ad130a7c><main class="page reco-hide"> <div class="page-title"><h1>TCP/IP基础知识</h1> <hr> <div data-v-7b49930f><i class="iconfont reco-account" data-v-7b49930f><span data-v-7b49930f>Simon的书柜</span></i> <!----> <!----> <i class="iconfont reco-tag tags" data-v-7b49930f><span class="tag-item" data-v-7b49930f>
+      TCP/IP
+    </span><span class="tag-item" data-v-7b49930f>
+      Basic
+    </span></i></div></div> <div class="theme-reco-content content__default"><h2 id="tcp-ip的标准化"><a href="#tcp-ip的标准化" class="header-anchor">#</a> TCP/IP的标准化</h2> <p><strong>TCP/IP的含义</strong><br>
+多数情况下，TCP/IP指的是利用IP进行通信时所必须用到的协议群的统称。具体来说，IP或ICMP、TCP或UDP、
+TELNET或FTP、以及HTTP都属于TCP/IP的协议。它们与TCP或IP的关系紧密，是互联网必不可少的组成部分。
+TCP/IP一词泛指这些协议，有时，也称TCP/IP为网际协议族</p> <p><strong>TCP/IP标准化精髓</strong><br>
+TCP/IP的协议标准化过程与其它的标准化过程有所不同，具有两大特点：一是具有开发性，二是具有实用性。开放性是
+因为制定TCP/IP协议的IETF本身就是一个允许任何人加入讨论的组织；实用性是因为在TCP/IP的标准化过程中，指定
+某一协议的规范本身已不再那么重要，首要任务是实现真正能实现通信的技术</p> <hr> <h2 id="互联网基础知识"><a href="#互联网基础知识" class="header-anchor">#</a> 互联网基础知识</h2> <p><strong>互联网的结构</strong><br>
+互联网中的每个网络都是由骨干网和末端网组成的。每个网络之间通过NOC相连。如果网络的运营商不同，它的连接方式
+和使用方法也会不同。连接这种异构网络需要IX的支持，总之，互联网就是众多异构的网络通过IX互连的一个巨型网络</p> <h2 id="tcp-ip协议分层模型"><a href="#tcp-ip协议分层模型" class="header-anchor">#</a> TCP/IP协议分层模型</h2> <h4 id="tcp-ip与osi参考模型"><a href="#tcp-ip与osi参考模型" class="header-anchor">#</a> TCP/IP与OSI参考模型</h4> <p><img src="/Simon-Bookcase/assets/img/fa688486.54faea85.png" alt=""></p> <p><strong>硬件（物理层）</strong><br>
+TCP/IP的最底层是负责数据传输的硬件，这种硬件就相当于以太网或电话线路等物理层设备。只要人们在物理层面的传输
+媒介不同，网络的带宽、可靠性、安全性、延迟等都会有所不同，而在这方面又没有一个既定的指标。总之，TCP/IP是在
+网络互联的设备之间能够通信的前提下才被提出的协议</p> <p><strong>网络接口层（数据链路层）</strong><br>
+互联网层使用IP协议，它相当于OSI模型中的第3层网络层，IP协议基于IP地址转发分包数据。TCP/IP分层中的互联网
+层与传输层的功能通常由操作系统提供，尤其是路由器，它必须实现通过互联网层转发分组数据包的功能。此外，连接互
+联网的所有主机跟路由器都必须实现IP的功能，其它连接互联网的网络设备就没必要一定实现TCP或IP的功能</p> <ul><li>IP<br>
+IP是跨越网络传送数据包，使整个互联网都能收到数据的协议。IP协议使数据能够发送到地球的另一端，这期间它
+使用IP地址作为主机的标识。IP还隐含着数据链路层的功能，通过IP，相互通信的主机之间不论经过怎样的底层数
+据链路都能实现通信。虽然IP也是分组交换的一种协议，但它不具有重发机制，即使分组数据包未能到达对端主机
+也不会重发，因此，属于非可靠性传输协议</li> <li>ICMP<br>
+IP数据包在发送途中一旦发生异常导致无法到达对端目标地址时，需要给发送端发送一个发生异常的通知。ICMP就
+是为这一功能设定的，它有时也被用来诊断网络的健康状况</li> <li>ARP<br>
+从分组数据包的IP地址中解析出物理地址（MAC地址）的一种协议</li></ul> <p><strong>传输层</strong>
+传输层最主要的功能就是让应用程序之间实现通信。计算机内部，通常同一时间允许多个程序。为此，必须分清是哪些程
+序与哪些程序在进行通信，识别这些应用程序的是端口号</p> <ul><li>TCP<br>
+TCP是一种面向有连接的传输层协议，它可以保证两端通信主机之间的通信可达。TCP能够正确处理在传输过程中丢
+包、传输顺序乱掉等异常情况，此外，TCP还能够有效利用带宽，缓解网络拥堵。然而，为了建立和断开连接，有时
+它需要至少7次的发包收包，导致网络流量的浪费。此外，为了提高网络的利用率，TCP协议中定义了各种各样复杂
+的规范，因此不利于视频会议等场合使用</li> <li>UDP<br>
+UDP有别于TCP，它是一种面向无连接的传输层协议。UDP不会关注对端是否真的收到了传送过去的数据，如果需要
+检查对端是否收到了分组数据包，或者对端是否连接到网络，则需要在应用程序中实现。UDP常用于分组数据较少、
+广播通信以及视频通信等多媒体领域</li></ul> <p><strong>应用层（会话层以上的分层）</strong><br>
+TCP/IP应用的架构绝大多数属于客户端/服务端模型。提供服务的程序叫服务端，接受服务的程序叫客户端。在这种通信
+模式中，提供服务的程序会预先被部署到主机上，等待接收任何时刻客户可能发送的请求。客户端可以随时发送请求给服
+务端，有时服务端可能会有处理异常、超出负载等情况，这时客户端可以在等待片刻后重发一次请求</p> <ul><li>WWW<br>
+浏览器与服务端之间通信所用的协议是HTTP，所传输数据的主要格式是HTML。WWW中的HTTP属于OSI应用层的协议，
+而HTTP属于表示层的协议</li> <li>电子邮件<br>
+发送电子 邮件时用到的协议叫SMTP。最初，人们只能发送文本格式的电子邮件。然而现在，电子邮件的格式由
+MIME协议扩展之后，就可以发送图像、声音等各种各样的信息，甚至可以修改邮件文字的大小、颜色。这里提到的
+MIME属于OSI参考模型的第6层--表示层</li> <li>文件传输（FTP）<br>
+文件传时是指将保存在其它计算机硬盘上的文件转移到本地的硬盘上，或将本地硬盘的文件传送到其它机器硬盘上
+的意思。该过程使用到的协议叫FTP。FTP很早就已经投入使用，传输过程中可以选择用二进制方式还是文本方式。
+在FTP中进行文件传输时会建立两个TCP连接，分别是发出传输请求时要用到的控制连接合实际传输数据时要用到的
+传输连接</li> <li>远程登录（TELNET和SSH）<br>
+远程登录是指登录到远程的计算机上，使那台计算机上的程序得以运行的一种功能。TCP/IP网络中远程登录常使用
+TELNET和SSH两种协议</li> <li>网络管理（SNMP）<br>
+在TCP/IP中进行网络管理时，采用SNMP协议。使用SNMP管理的主机、网桥、路由器等称作SNMP代理，而进行管
+理的那一段叫做管理器。SNMP正是这个Manager和Agent所要用到的协议。在SNMP的代理端，保存着网络接口的
+信息、数据通信量、异常数据量以及设备温度等信息。这些信息可以通过MIB访问。因此，在TCP/IP的网络管理
+中，SNMP属于应用协议，MIB属于表示层协议</li></ul> <h2 id="tcp-ip分层模型和通信示例"><a href="#tcp-ip分层模型和通信示例" class="header-anchor">#</a> TCP/IP分层模型和通信示例</h2> <h4 id="数据包首部"><a href="#数据包首部" class="header-anchor">#</a> 数据包首部</h4> <p><img src="/Simon-Bookcase/assets/img/7a39a29e.d04b5238.png" alt=""></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">12/3/2019, 7:16:05 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/网络基础知识.html" class="prev">
+          网络基础知识
+        </a></span> <span class="next"><a href="/Simon-Bookcase/computer/《图解TCPIP》笔记/数据链路.html">
+          数据链路
+        </a>
+        →
+      </span></p></div> </main> <!----> <Comments isShowComments="true" data-v-ad130a7c></Comments></div></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/Simon-Bookcase/assets/js/app.9b71d7d3.js" defer></script><script src="/Simon-Bookcase/assets/js/3.610de219.js" defer></script><script src="/Simon-Bookcase/assets/js/1.39b71273.js" defer></script><script src="/Simon-Bookcase/assets/js/23.87f031c4.js" defer></script>
+  </body>
+</html>
